@@ -6,7 +6,7 @@
 <style>
   body {
     margin: 0;
-    background: black;
+    background: linear-gradient(135deg, #001a4d 0%, #003d99 100%);
     height: 100vh;
     overflow: hidden;
   }
@@ -14,8 +14,8 @@
   #btn {
     width: 150px;
     height: 80px;
-    background: white;
-    border: 2px solid black;
+    background: #0052cc;
+    border: 2px solid #0039a6;
     border-radius: 10px;
     position: absolute;
     left: 50px;
@@ -31,20 +31,30 @@
     padding: 6px 8px;
     font-family: Consolas;
     font-size: 20px;
-    color: blue;
+    color: #ffffff;
     cursor: grab;
     user-select: none;
     touch-action: none;
+    box-shadow: 0 4px 15px rgba(0, 82, 204, 0.4);
+    transition: box-shadow 0.2s ease;
+  }
+
+  #btn:hover {
+    box-shadow: 0 6px 20px rgba(0, 82, 204, 0.6);
+  }
+
+  #btn:active {
+    box-shadow: 0 2px 8px rgba(0, 82, 204, 0.3);
   }
 
   #dominio {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    color: #0A0;
+    color: #00ccff;
     font-family: Consolas;
     font-size: 14px;
-    opacity: 0.7;
+    opacity: 0.8;
   }
 </style>
 </head>
