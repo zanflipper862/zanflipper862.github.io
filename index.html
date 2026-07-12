@@ -21,8 +21,14 @@
     left: 50px;
     top: 50px;
     display: flex;
+    /* ensure multi-line text is centered */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* fallback centering for inline text wrapping */
+    text-align: center;
+    box-sizing: border-box;
+    padding: 6px 8px;
     font-family: Consolas;
     font-size: 20px;
     color: blue;
